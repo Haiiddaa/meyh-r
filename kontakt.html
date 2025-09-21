@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - MEYLLER & HR Aufzüge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="MEYLLER & HR Aufzüge">
+                <span class="logo-text">H&R und Meyller Aufzüge</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="leistungen.html">Leistungen</a></li>
+                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="referenzen.html">Referenzen</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Contact Information Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-main">
+                <div class="contact-info">
+                    <div class="section-title text-left">
+                        <h2>Wir sind für Sie da</h2>
+                        <p>Kontaktieren Sie uns für eine unverbindliche Beratung oder bei Notfällen</p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>Hauptsitz Bremen</h4>
+                                <p>Osterholzer Heerstraße 92<br>
+                                28325 Bremen<br>
+                                Deutschland</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>Telefon</h4>
+                                <p>0421/ 22 33 8888<br>
+                                Mo-Fr: 8:00 - 16:00 Uhr<br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>E-Mail</h4>
+                                <p>info@meyller-hr-aufzuege.de<br>
+                                service@meyller-hr-aufzuege.de</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item emergency">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>24h Notdienst</h4>
+                                <p><strong>01234 567890</strong><br>
+                                Rund um die Uhr erreichbar<br>
+                                Schnelle Hilfe bei Störungen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Kontaktformular</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="vorname">Vorname *</label>
+                                <input type="text" id="vorname" name="vorname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nachname">Nachname *</label>
+                                <input type="text" id="nachname" name="nachname" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefon">Telefon</label>
+                                <input type="tel" id="telefon" name="telefon">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="unternehmen">Unternehmen</label>
+                            <input type="text" id="unternehmen" name="unternehmen">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="betreff">Betreff *</label>
+                            <select id="betreff" name="betreff" required>
+                                <option value="">Bitte wählen Sie...</option>
+                                <option value="wartung">Wartung & Service</option>
+                                <option value="modernisierung">Modernisierung</option>
+                                <option value="neuanlage">Neue Aufzugsanlage</option>
+                                <option value="reparatur">Reparatur</option>
+                                <option value="angebot">Angebot anfordern</option>
+                                <option value="sonstiges">Sonstiges</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nachricht">Nachricht *</label>
+                            <textarea id="nachricht" name="nachricht" rows="5" required placeholder="Beschreiben Sie Ihr Anliegen..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="datenschutz" name="datenschutz" required>
+                                <span class="checkmark"></span>
+                                Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn">Nachricht senden</button>
+                        <p class="form-note">* Pflichtfelder</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="section" style="background-color: var(--light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Unser Einzugsgebiet</h2>
+                <p>Wir sind in ganz Norddeutschland für Sie da</p>
+            </div>
+            <div class="service-areas">
+                <div class="area-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4>Hamburg & Umgebung</h4>
+                    <p>Vollservice im Großraum Hamburg inklusive aller Stadtteile und Umlandgemeinden.</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4>Delmenhorst</h4>
+                    <p>Komplette Abdeckung mit schnellen Reaktionszeiten.</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4>Niedersachsen Nord</h4>
+                    <p>Service im nördlichen Niedersachsen bis zur Region Hannover.</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4>Bremen & Bremerhaven</h4>
+                    <p>Vollständige Betreuung der Hansestadt Bremen und Umgebung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Section -->
+    <section class="section emergency-section">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-text">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Notfall?</h2>
+                    <p>Bei Aufzugsstörungen sind wir rund um die Uhr für Sie da. Unser Notdienst garantiert schnelle Hilfe.</p>
+                    <div class="emergency-features">
+                        <div class="emergency-feature">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 erreichbar</span>
+                        </div>
+                        <div class="emergency-feature">
+                            <i class="fas fa-bolt"></i>
+                            <span>Schnelle Reaktion</span>
+                        </div>
+                        <div class="emergency-feature">
+                            <i class="fas fa-tools"></i>
+                            <span>Vor-Ort-Service</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="emergency-contact">
+                    <div class="emergency-phone">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Notdienst</span>
+                        <a href="tel:01234567890">01234 567890</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>MEYLLER & HR Aufzüge</h4>
+                    <p>Ihr Partner für Aufzugstechnik mit Tradition und Innovation.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Leistungen</h4>
+                    <ul>
+                        <li><a href="leistungen.html"><i class="fas fa-chevron-right"></i> Aufzugsmodernisierung</a></li>
+                        <li><a href="leistungen.html"><i class="fas fa-chevron-right"></i> Wartung & Service</a></li>
+                        <li><a href="leistungen.html"><i class="fas fa-chevron-right"></i> Neuanlagen</a></li>
+                        <li><a href="leistungen.html"><i class="fas fa-chevron-right"></i> Notdienst</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakt</h4>
+                    <ul>
+                        <li><a href="kontakt.html"><i class="fas fa-chevron-right"></i> Standorte</a></li>
+                        <li><a href="kontakt.html"><i class="fas fa-chevron-right"></i> Anfahrt</a></li>
+                        <li><a href="kontakt.html"><i class="fas fa-chevron-right"></i> Kontaktformular</a></li>
+                        <li><a href="kontakt.html"><i class="fas fa-chevron-right"></i> Notruf: 01234 567890</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html"><i class="fas fa-chevron-right"></i> Impressum</a></li>
+                        <li><a href="datenschutz.html"><i class="fas fa-chevron-right"></i> Datenschutz</a></li>
+                        <li><a href="agb.html"><i class="fas fa-chevron-right"></i> AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 MEYLLER & HR Aufzüge. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
